@@ -22,11 +22,16 @@ function Header() {
   };
 
   const handleLoginClick = () => {
-    dispatch(loginUser({ name: "Jonathas", email: "jonathas@gmail.com" }));
+    dispatch(
+      loginUser({
+        name: "Jonathas Aroucha",
+        email: "jonathas.aroucha@gmail.com",
+      })
+    );
   };
 
   const handleLogoutClick = () => {
-    dispatch(logoutUser);
+    dispatch(logoutUser());
   };
 
   return (
